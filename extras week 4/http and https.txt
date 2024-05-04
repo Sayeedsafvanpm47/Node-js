@@ -1,0 +1,25 @@
+HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are both protocols used for transmitting data over the internet, but they differ significantly in terms of security and data encryption:
+
+    Security:
+
+        HTTP: HTTP is not secure by default. Data transmitted over HTTP is sent in plaintext, making it susceptible to interception and eavesdropping by malicious actors. This lack of encryption means that sensitive information, such as login credentials or credit card details, can be easily captured if transmitted over an unsecured HTTP connection.
+
+        HTTPS: HTTPS, on the other hand, is designed to be secure. It uses encryption protocols like SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security), to encrypt data in transit. This encryption ensures that data transmitted between the client (e.g., web browser) and the server is secure and cannot be easily intercepted or tampered with by third parties. HTTPS is the recommended choice for transmitting sensitive information and is widely used for secure online transactions, login sessions, and data transfer.
+
+    Data Integrity:
+
+        HTTP: Because HTTP does not provide data encryption, there is no built-in mechanism to ensure the integrity of data during transmission. This means that data can be altered or tampered with while in transit without detection.
+
+        HTTPS: HTTPS includes mechanisms for ensuring data integrity. Data is encrypted, and the use of digital certificates and cryptographic hashes allows both the client and server to verify that the data has not been tampered with during transmission.
+
+    Authentication:
+
+        HTTP: HTTP does not provide a reliable way to authenticate the identity of the server or the client. This lack of authentication opens the door to man-in-the-middle attacks, where an attacker can impersonate a legitimate server or intercept communications.
+
+        HTTPS: HTTPS incorporates server authentication using digital certificates issued by trusted Certificate Authorities (CAs). When you visit a website over HTTPS, your browser verifies the server's certificate to ensure that you are connecting to the correct server. This authentication mechanism helps prevent phishing and impersonation attacks.
+
+    Port:
+
+        HTTP: HTTP typically uses port 80 for communication.
+
+        HTTPS: HTTPS typically uses port 443 for communication. This port is reserved for secure HTTP traffic.

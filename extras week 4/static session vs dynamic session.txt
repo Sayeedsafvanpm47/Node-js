@@ -1,0 +1,27 @@
+Statically Typed Sessions (Server-Side Sessions):
+
+    Statically typed sessions, in the context of web development, refer to sessions where the data types of session variables are explicitly declared and fixed in advance.
+    In such sessions, you define the data types for each session variable when setting them up. Once a session variable is declared with a specific data type, it cannot be changed during the session's lifetime.
+    Statically typed sessions are more common in languages and frameworks that enforce strong typing, such as Java with the HttpSession object.
+
+Example (Java Servlets - Statically Typed Session):
+
+java
+
+// Statically typed session variable with an explicitly declared data type
+HttpSession session = request.getSession();
+session.setAttribute("count", 42); // Integer type
+
+Dynamically Typed Sessions (Dynamic Sessions):
+
+    Dynamically typed sessions refer to sessions where session variables do not have fixed data types and can change their data types during the session's lifetime.
+    In dynamically typed sessions, you do not need to declare the data type of session variables explicitly. You can set a session variable as one data type and later change it to a different data type if needed.
+    Dynamically typed sessions are more common in languages and frameworks that do not enforce strict data typing, such as JavaScript with Express.js.
+
+Example (Node.js with Express - Dynamically Typed Session):
+
+javascript
+
+// Dynamically typed session variable without an explicitly declared data type
+req.session.username = "john"; // Initially, a string
+req.session.username = 42;     // Later, changed to an int

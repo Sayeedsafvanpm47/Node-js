@@ -1,0 +1,4 @@
+  <!--<%=/* 2+2 %> -->
+          <!--/*<%=/* text %>*\-->
+          <!-- if text is not definedf -->
+         /* <%= locals.text || 'Default'%> 

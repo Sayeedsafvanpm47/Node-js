@@ -1,0 +1,50 @@
+ending OPTIONS Request [Node.js Code]
+Browsers send the OPTIONS request method to find the supported HTTP methods and other parameters supported for the target server before sending the actual HTTP request. Browsers send OPTIONS requests when they send a CORS request to another origin. In this HTTP OPTIONS request example, the client requests the available parameters for the HTTP POST method. Click Send to execute an OPTIONS request online and see the results. The Node.js code was automatically generated for the OPTIONS Request example.
+Sending OPTIONS Request [Node.js Code]
+Send
+
+OPTIONS /api/v1/requests HTTP/1.1
+Host: api.reqbin.com
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: https://reqbin.com
+
+Updated: Dec 06, 2022 Viewed: 25571 times
+Author: ReqBin
+Node.js code for OPTIONS Request example
+Node.js code for OPTIONS Request Example
+This Node.js code snippet was generated automatically for the OPTIONS Request example.
+<< Back to the OPTIONS Request example
+
+What is HTTP?
+
+Hypertext Transfer Protocol (HTTP) is an application-level data transfer protocol that transfers data between HTTP clients (browsers and mobile apps) and a server. The HTTP protocol uses a client-server architecture to transfer data. The client application sends a request to the server, where the server processes the client's request and sends a response back to the client. Each HTTP message consists of a request string, HTTP headers, and a message body.
+What is the OPTIONS request method used for?
+
+The HTTP OPTIONS request is used to describe communication options for the target resource. Browsers send HTTP OPTIONS requests to find out the HTTP methods and other options supported by the webserver. The HTTP OPTIONS method is defined as idempotent, which means that multiple identical OPTIONS requests must have the same effect as a single request. If you want to change the data on the server, use the POST, PUT, PATCH, or DELETE methods.
+OPTIONS Request Example
+
+The following is an example of sending the OPTIONS request to the ReqBin echo URL:
+HTTP OPTIONS Request Example
+
+OPTIONS /api/v1/requests HTTP/1.1
+Host: api.reqbin.com
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: https://reqbin.com
+
+
+What is CORS?
+Ezoic
+
+Cross-Origin Resource Sharing (CORS) is a security mechanism based on HTTP headers that allow the server to specify any other source that the browser should receive resources or send data. OPTIONS request is a pre-flight request, part of CORS. CORS is a way for the server to check if a request is coming from an allowed source and tell the browser not to block it. CORS implementation was due to single-origin policy constraints. The same-origin policy restricts resources to interact only with resources located in the same domain.
+See also
+
+    REST API Example
+    How do I send an HTTP GET request?
+    How do I send an HTTP PATCH request?
+    How do I send an HTTP PUT request?
+
+Generate code snippets for Node.js and other programming languages
+
+Convert your OPTIONS Request request to the PHP, JavaScript/AJAX, Node.js, Curl/Bash, Python, Java, C#/.NET code snippets using the Node.js code generator.
